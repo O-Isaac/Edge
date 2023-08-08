@@ -20,7 +20,7 @@ export default {
   head: () => {
     const { asPath, defaultLocale, locale } = useRouter();
     const { frontMatter } = useConfig();
-    const url = "https://edge-ui.vercel.app" + (defaultLocale === locale ? asPath : `/${locale}${asPath}`);
+    const url = "https://edge-ui-docs.vercel.app/" + (defaultLocale === locale ? asPath : `/${locale}${asPath}`);
 
     return (
       <>
