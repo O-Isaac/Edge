@@ -24,10 +24,6 @@ To get started with the documentation locally, follow these steps:
 4. Run the development server: `npm run dev`
 5. Open your browser and navigate to `http://localhost:3000` to access the documentation.
 
-## Contributions
-
-We welcome contributions from the community to improve this documentation. If you find any errors, have suggestions for improvements, or want to add new sections, feel free to submit a pull request. Please follow our [contribution guidelines](CONTRIBUTING.md) when making contributions.
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE), which means you can use, modify, and distribute it freely.
