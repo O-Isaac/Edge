@@ -27,6 +27,17 @@ export default {
         <meta property="og:url" content={url} />
         <meta property="og:title" content={frontMatter.title || "Edge UI"} />
         <meta property="og:description" content={frontMatter.description || "Ultimate Interface Overhaul"} />
+        <meta property="og:url" content={url} />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="https://edge-ui-docs.vercel.app/" />
+        <meta property="twitter:url" content="https://edge-ui-docs.vercel.app/" />
+        <meta name="twitter:title" content={frontMatter.title || "Edge UI"} />
+        <meta name="twitter:description" content={frontMatter.description || "Ultimate Interface Overhaul"} />
+        <meta name="twitter:image" content="https://edge-ui-docs.vercel.app/images/LamasTinyHud-Reskin.png" />
+        <meta property="og:image:width" content="1920" />
+        <meta property="og:image:height" content="1080" />
+        <meta name="theme-color" content="#d69c3f" />
       </>
     );
   },
