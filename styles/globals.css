@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --hero-bg-dark: rgba(23, 23, 23, 1);
+  --hero-bg-mid-dark: rgba(23, 23, 23, 0.5);
+  --hero-bg-white: rgba(243, 244, 246, 1);
+  --hero-bg-mid-white: rgba(243, 244, 246, 0.5);
+}
+
+.screen {
+  height: calc(100vh - 14.5rem);
+}
+
+.hero-gradient-l {
+  background: radial-gradient(circle at center, transparent, transparent, var(--hero-bg-white) 90%),
+    radial-gradient(circle at center, var(--hero-bg-mid-white), var(--hero-bg-mid-dark), transparent);
+}
+
+.dark .hero-gradient-l {
+  background: radial-gradient(circle at center, transparent, transparent, var(--hero-bg-dark) 90%),
+    radial-gradient(circle at center, var(--hero-bg-mid-dark), var(--hero-bg-mid-dark), transparent);
+}

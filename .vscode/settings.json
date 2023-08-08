@@ -1,0 +1,9 @@
+{
+  "emmet.includeLanguages": {
+    "mdx": "javascriptreact"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "editor.quickSuggestions": {
+    "strings": true
+  }
+}

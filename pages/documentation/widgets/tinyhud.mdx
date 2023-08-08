@@ -1,0 +1,57 @@
+---
+title: LamasTinyHud
+---
+
+import { Nexus } from "../../../components/Nexus.jsx";
+import LightBoxImage from "../../../components/LightBoxImage.jsx";
+import Image from "next/image";
+
+<LightBoxImage alt="Ultra wide Image" src="/images/LamasTinyHud-Reskin.png" />
+
+_As promised, a small Horizon inspired reskin for LamasTinyHUD (a very lazy one) .
+In no way this is finished, just a sample file that I did in half a day for you guys to play around.
+I will still work on the animations and the icons in the future updates.
+And yes, I will make a replacer version for Elden Equip as well._
+
+## Requirements
+
+<section className="overflow-auto max-w-full mt-4">
+  <table className="text-left border">
+    <thead className="[&>tr>th]:p-4 [&>tr>th]:border">
+      <tr>
+        <th>Mod</th>
+      </tr>
+    </thead>
+    <tbody className="[&>tr>th]:p-4 [&>tr>th]:border [&>tr>td]:p-4 [&>tr>td]:border">
+      <tr>
+        <th>
+          <Nexus id="82545" name="LamasTinyHUD" />
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <Nexus id="83970" name="LamasTinyHUD - Nordic UI Reskin" />
+        </th>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+## Installation
+
+Either install as a simple mod in you mod manager (overwriting both requirements above) or drop my HUD.svg file manually to `..\mods\LamasTinyHUD\SKSE\Plugins\resources\img` folder.
+
+## Settings
+
+After installation, make sure that you atleast set those two settings:
+
+```toml copy
+uBackgroundTransparency=255
+uBackgroundIconTransparency=0
+```
+
+## Ultrawide
+
+Also, Ultrawide gigachads, make sure you change the ** resolution** in lamastinyhuds MCM to yours, and lower the "**Scaling of HUD Image Width**" to something like 0.15
+
+<LightBoxImage alt="Ultra wide Image" src="/images/LamasTinyHud-Ultrawide.png" />

@@ -1,0 +1,13 @@
+{
+  "index": {
+    "title": "Home",
+    "type": "page",
+    "theme": {
+      "layout": "raw"
+    }
+  },
+  "documentation": {
+    "title": "Documentation",
+    "type": "page"
+  }
+}

@@ -1,0 +1,197 @@
+import { Steps, Callout } from "nextra/components";
+import { Nexus } from "../../components/Nexus.jsx";
+
+<Steps>
+### Download requirements mods
+ 
+<Callout type="warning" emoji="⚠️">
+  All mods in this list are for Skyrim Special Edition, but you can try searching and installing mods for the Legendary Edition.
+</Callout>
+
+<section className="overflow-auto max-w-full mt-4">
+  <table className="text-left border">
+    <thead className="[&>tr>th]:p-4 [&>tr>th]:border">
+      <tr>
+        <th>Mod</th>
+      </tr>
+    </thead>
+    <tbody className="[&>tr>th]:p-4 [&>tr>th]:border [&>tr>td]:p-4 [&>tr>td]:border">
+      <tr>
+        <th>
+          <Nexus id="12604" name="SkyUI" />
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <Nexus id="463" name="SkyHUD" />
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <Nexus id="12688" name="MoreHUD" />
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <Nexus id="64339" name="BTPS" />
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <Nexus id="52743" name="Oblivion Interaction Icons" />
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <Nexus id="56767" name="Simple Activate" />
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <Nexus id="62775" name="TrueHUD" />
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <Nexus id="69980" name="QuicklootEE" />
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <Nexus id="74484" name="Compass Navigation Overhaul" />
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <Nexus id="27859" name="Skyrim Souls RE" />
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <Nexus id="81291" name="Show Player in Menus" />
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <Nexus id="63057" name="Detection Meter" />
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <Nexus id="60837" name="Dear Diary Dark Mode" />
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <Nexus id="75188" name="Untarnished UI" />
+        </th>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+### Load List
+
+The Load order should look like this
+
+<br />
+<section className="overflow-auto max-w-full">
+  <table className="text-left border">
+    <thead className="[&>tr>th]:p-4 [&>tr>th]:border">
+      <tr>
+        <th>Mod</th>
+        <th>Optional</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody className="[&>tr>th]:p-4 [&>tr>th]:border [&>tr>td]:p-4 [&>tr>td]:border">
+      <tr>
+        <th>SKYHUD</th>
+        <td>✖</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>SKYUI</th>
+        <td>✖</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>MOREHUD</th>
+        <td>✖</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>TRUEHUD</th>
+        <td>✖</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>BTPS</th>
+        <td>✖</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>SIMPLE ACTIVATE</th>
+        <td>✔</td>
+        <td>_Not a hard requirement_</td>
+      </tr>
+      <tr>
+        <th>SKYRIM SOULS RE</th>
+        <td>✔</td>
+        <td>_Not a hard requirement_</td>
+      </tr>
+      <tr>
+        <th>SHOW PLAYER IN MENUS</th>
+        <td>✔</td>
+        <td>_Not a hard requirement_</td>
+      </tr>
+      <tr>
+        <th>QUICKLOOT EE</th>
+        <td>✖</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>COMPASS NAVIGATION OVERHAUL + INFINITY UI</th>
+        <td>✖</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td className="text-center" colSpan="3">
+          Up to this point the load order relative to each other doesn&#39;t matter
+        </td>
+      </tr>
+      <tr>
+        <th>DEAR DIARY DM</th>
+        <td>✖</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>UNTARNISHED UI</th>
+        <td>✖</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>DBVO</th>
+        <td>✔</td>
+        <td>_If you use, you should install a patch_</td>
+      </tr>
+      <tr>
+        <th>EDGE UI</th>
+        <td>✖</td>
+        <td>Obligatory</td>
+      </tr>
+      <tr>
+        <th>DBVO Untarnished patch</th>
+        <td>✔</td>
+        <td>_Only if you use DBVO_</td>
+      </tr>
+      <tr>
+        <th>any font replacer that you wanna use</th>
+        <td>✔</td>
+        <td>_Just make sure it has Oblivion icons patch_</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+</Steps>
