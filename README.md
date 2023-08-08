@@ -18,7 +18,7 @@ Welcome to the documentation for Edge UI Docs! This documentation is built using
 
 To get started with the documentation locally, follow these steps:
 
-1. Clone this repository: `git clone https://github.com/your-username/project-name-docs.git`
+1. Clone this repository: `git clone https://github.com/O-Isaac/Edge-UI-Docs.git`
 2. Enable Corepack (pnnpm): `corepack enable`
 3. Install dependencies: `pnpm install`
 4. Run the development server: `npm run dev`
