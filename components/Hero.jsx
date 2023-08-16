@@ -7,7 +7,7 @@ function Hero() {
       <p className="relative text-3xl lg:text-4xl font-light z-30">Ultimate Interface Overhaul</p>
       <div className="relative grid p-4 mt-2 transition-all z-30">
         <Link
-          className="px-4 py-3 dark:bg-white dark:text-black dark:hover:bg-transparent dark:hover:border-white dark:hover:text-white bg-black text-white hover:bg-transparent hover:text-black hover:border-black transition-colors border shadow-sm rounded-lg"
+          className="px-4 py-3 rounded-lg  border hover:bg-zinc-50 dark:hover:text-black transition-all"
           href="documentation"
         >
           Read Documentation
