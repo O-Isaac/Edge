@@ -3,7 +3,7 @@ import { useConfig } from "nextra-theme-docs";
 
 export default {
   logo: <span>Edge UI</span>,
-  docsRepositoryBase: "https://github.com/O-Isaac/Edge-UI-Docs",
+  docsRepositoryBase: "https://github.com/O-Isaac/Edge-UI-Docs/tree/master",
   project: {
     link: "https://discord.gg/wY72prnd",
     icon: (
