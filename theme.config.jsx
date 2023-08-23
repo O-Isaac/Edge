@@ -1,14 +1,9 @@
-import Image from "next/image";
 import { useRouter } from "next/router";
 import { useConfig } from "nextra-theme-docs";
+import Logo from "./components/Logo";
 
 export default {
-  logo: (
-    <>
-      <Image alt="Edge UI Logo" src="/images/brands/logo.webp" height={35} width={35} />
-      <span>Edge UI</span>
-    </>
-  ),
+  logo: <Logo />,
   docsRepositoryBase: "https://github.com/O-Isaac/Edge-UI-Docs/tree/master",
   project: {
     link: "https://discord.gg/h2xnrKEsUp",
