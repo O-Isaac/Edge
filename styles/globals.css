@@ -2,17 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --hero-bg-dark: rgba(23, 23, 23, 1);
-  --hero-bg-mid-dark: rgba(23, 23, 23, 0.5);
-  --hero-bg-white: rgba(243, 244, 246, 1);
-  --hero-bg-mid-white: rgba(243, 244, 246, 0.5);
-}
-
-/* .dark body {
-  background: linear-gradient(to bottom, hsl(204.37deg 25% 6%), #171717 70%);
-} */
-
 .btn-read {
   position: relative;
   background: #0f1c29;
@@ -22,19 +11,64 @@
 }
 
 .screen {
-  height: calc(100vh - 14.5rem);
+  height: calc(100vh - 17.3rem);
 }
 
-.dark .screen {
-  background: linear-gradient(to bottom, hsl(204.37deg 25% 6%), #171717 70%);
+/* Gallery */
+
+.gallery-container {
+  display: grid;
+  grid-template-areas: 
+  "g1 g2 g3"
+  "g1 g4 g5";
+
+  gap: 4px;
 }
 
-.hero-gradient-l {
-  background: radial-gradient(circle at center, transparent, transparent, var(--hero-bg-white) 90%),
-    radial-gradient(circle at center, var(--hero-bg-mid-white), var(--hero-bg-mid-dark), transparent);
+.gallery-container > * {
+  object-fit: cover;
+  object-position: center;
 }
 
-.dark .hero-gradient-l {
-  background: radial-gradient(circle at center, transparent, transparent, var(--hero-bg-dark) 90%),
-    radial-gradient(circle at center, var(--hero-bg-mid-dark), var(--hero-bg-mid-dark), transparent);
+.gallery-container > :nth-child(1) {
+  grid-area: g1;
+  height: 100%;
+  @apply rounded-l-lg;
+}
+
+.gallery-container > :nth-child(2) {
+  grid-area: g2;
+  
+  @apply rounded-none;
+}
+
+.gallery-container > :nth-child(3) {
+  grid-area: g3;
+  @apply rounded-tr-lg;
+}
+
+.gallery-container > :nth-child(4) {
+  grid-area: g4;
+  border-radius: 0px;
+}
+
+.gallery-container > :nth-child(5) {
+  grid-area: g5;
+
+  @apply rounded-br-lg;
+}
+
+/* Navbar */
+
+.nextra-nav-container-blur {
+  box-shadow: none !important; /* Override dark */
+}
+
+.nextra-nav-container nav {
+  @apply py-14
+}
+
+/* Adjust sidebar to padding */ 
+.nextra-sidebar-container, .nextra-scrollbar {
+  @apply lg:top-28
 }
