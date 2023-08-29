@@ -3,8 +3,13 @@ import Image from "next/image";
 function Logo () {
     return (
     <>
-      <Image className="mr-2" alt="Edge UI Logo" src="/images/brands/logo.webp" height={35} width={35} />
-      <span>Edge UI</span>
+      <div className="flex items-center justify-between gap-2">
+        <figure>
+          <Image alt="Edge UI Logo" src="/images/brands/logo.webp" height={30} width={30} />
+        </figure>
+        <span className="text-xl text-gray-300 dark:text-gray-700">/</span>
+        <h1 className="text-2xl font-extrabold">UI</h1>
+      </div>
     </>
     )
 }
