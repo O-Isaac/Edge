@@ -70,5 +70,5 @@
 
 /* Adjust sidebar to padding */ 
 .nextra-sidebar-container, .nextra-scrollbar {
-  @apply lg:top-28
+  @apply top-11 lg:top-28
 }
