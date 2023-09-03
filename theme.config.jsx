@@ -5,6 +5,14 @@ import Logo from "./components/Logo";
 export default {
   logo: <Logo />,
   docsRepositoryBase: "https://github.com/O-Isaac/Edge-UI-Docs/tree/master",
+  banner: {
+    key: 'lamas-release',
+    text: (
+      <a href="https://edge-ui-docs.vercel.app/documentation/widgets/tinyhud" target="_blank">
+        🎉 Lamas Tiny Hud Replace is released. Read more →
+      </a>
+    )
+  },
   project: {
     link: "https://discord.gg/h2xnrKEsUp",
     icon: (
