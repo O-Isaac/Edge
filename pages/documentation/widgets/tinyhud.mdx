@@ -1,57 +1,53 @@
 ---
-title: LamasTinyHud
+title: Lamas Tiny Hud | Replacer (Edge & White version)
 ---
 
+import { Tabs, Tab } from 'nextra/components'
 import { Nexus } from "../../../components/Nexus.jsx";
-import LightBoxImage from "../../../components/LightBoxImage.jsx";
-import Image from "next/image";
+import Requirements from "../../../components/Requirements.jsx";
 
-<LightBoxImage alt="Ultra wide Image" src="/images/LamasTinyHud-Reskin.png" />
 
-_As promised, a small Horizon inspired reskin for LamasTinyHUD (a very lazy one) .
-In no way this is finished, just a sample file that I did in half a day for you guys to play around.
-I will still work on the animations and the icons in the future updates.
-And yes, I will make a replacer version for Elden Equip as well._
+<img className="my-4 rounded-lg" src="https://media.discordapp.net/attachments/1147945161511424090/1147945161872113855/yt_previeww.jpg" alt="Lamas Tiny Hud" />
+
+# Lamas Tiny Hud | Replacer (Edge & White version)
+
+The replacer was heavily inspired by the quick slot menu from Horizon Zero Dawn game.
+Also I want to express my deep gratitude to the author of the original Lamas Tiny Hud mod **@mlthelama**, for the fact that he contributed to the technical implementation of this replacer, so don't forget to Endorse   his mod!
+Premade (bottom-left) presets for 16x9 & 21x9 proportions are included in replacer, check FAQ below to understand how to apply them.
 
 ## Requirements
 
-<section className="overflow-auto max-w-full mt-4">
-  <table className="text-left border">
-    <thead className="[&>tr>th]:p-4 [&>tr>th]:border">
-      <tr>
-        <th>Mod</th>
-      </tr>
-    </thead>
-    <tbody className="[&>tr>th]:p-4 [&>tr>th]:border [&>tr>td]:p-4 [&>tr>td]:border">
-      <tr>
-        <th>
-          <Nexus id="82545" name="LamasTinyHUD" />
-        </th>
-      </tr>
-      <tr>
-        <th>
-          <Nexus id="83970" name="LamasTinyHUD - Nordic UI Reskin" />
-        </th>
-      </tr>
-    </tbody>
-  </table>
-</section>
+<Requirements>
+    <Nexus id="82545" name="LamasTinyHUD" />
+</Requirements>
+
+## Download
+
+Download replacer (Edge or White version)
+
+<Tabs className="max-w-sm" items={['Edge Version', 'White Version']} defaultIndex="0">
+    <Tab>
+        https://drive.google.com/file/d/1gkaAuF3p4mptSMcEsDGfvH7zZdAsobAq/view?usp=sharing
+    </Tab>
+    <Tab>
+        https://drive.google.com/file/d/15_Dc6wBUELknhLOHxN_OCMirzLgTiCZE/view?usp=sharing
+    </Tab>
+</Tabs>
 
 ## Installation
+1. Download requirements and install them
+2. Download preferable replacer (Edge or White version)
+3. Overwrite Lamas Tiny Hud with my replace
 
-Either install as a simple mod in you mod manager (overwriting both requirements above) or drop my HUD.svg file manually to `..\mods\LamasTinyHUD\SKSE\Plugins\resources\img` folder.
+## F.A.Q
 
-## Settings
-
-After installation, make sure that you atleast set those two settings:
-
-```toml copy
-uBackgroundTransparency=255
-uBackgroundIconTransparency=0
-```
-
-## Ultrawide
-
-Also, Ultrawide gigachads, make sure you change the ** resolution** in lamastinyhuds MCM to yours, and lower the "**Scaling of HUD Image Width**" to something like 0.15
-
-<LightBoxImage alt="Ultra wide Image" src="/images/LamasTinyHud-Ultrawide.png" />
+- Which version of Lamas TIny Hud mod should I download?
+    - *1.5.0 and above*
+- How can I change the preset to fit 21x9 resolution?
+    - *Open replacer's folder go to > `SKSE\mcm\Settings` and remove **"(Ultrawide 21x9)"** from .ini's name > Make sure to *overwrite**
+- How can I get different potion icons?
+    - *Open replacer's folder and go to > `\SKSE\Plugins\resources\icons` then open corresponding folder with potion icons > drag&drop them into **"icons"** folder.*
+- How can I bla bla bla... with Lamas Tiny Hud?
+    - *Go to the mod's Nexus page and find the answer to your question.*
+- I have another question regarding the replacer.
+    - *Feel free to DM or write down here.*

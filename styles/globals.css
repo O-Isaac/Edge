@@ -72,3 +72,7 @@
 .nextra-sidebar-container, .nextra-scrollbar {
   @apply top-11 lg:top-28
 }
+
+[role="tab"] {
+  margin-left: 3px;
+}

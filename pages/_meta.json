@@ -9,5 +9,9 @@
   "documentation": {
     "title": "Documentation",
     "type": "page"
+  },
+  "faq": {
+    "title": "FAQ",
+    "type": "page"
   }
 }
