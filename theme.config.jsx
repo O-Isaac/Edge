@@ -31,6 +31,7 @@ export default {
     const { asPath, defaultLocale, locale } = useRouter();
     const { frontMatter } = useConfig();
     const url = "https://edge-ui-docs.vercel.app/" + (defaultLocale === locale ? asPath : `/${locale}${asPath}`);
+    const image = frontMatter.image || "https://edge-ui-docs.vercel.app/images/LamasTinyHud-Reskin.png"
 
     return (
       <>
@@ -44,7 +45,7 @@ export default {
         <meta property="twitter:url" content="https://edge-ui-docs.vercel.app/" />
         <meta name="twitter:title" content={url} />
         <meta name="twitter:description" content={frontMatter.description || "Ultimate Interface Overhaul"} />
-        <meta name="twitter:image" content="https://edge-ui-docs.vercel.app/images/LamasTinyHud-Reskin.png" />
+        <meta name="twitter:image" content={image} />
         <meta property="og:image:width" content="1920" />
         <meta property="og:image:height" content="1080" />
         <meta name="theme-color" content="#d69c3f" />
