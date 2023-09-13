@@ -8,8 +8,8 @@ export default {
   banner: {
     key: 'lamas-release',
     text: (
-      <a href="https://edge-ui-docs.vercel.app/documentation/widgets/detection-meter" target="_blank">
-        🎉 Detection Meter Replace is released. Read more →
+      <a href="https://edge-ui-docs.vercel.app/documentation/widgets/valhalla-combat-sfx-timing-block" target="_blank">
+        🎉 Valhalla Combat - Perfect timing block SFX Replacer is released. Read more →
       </a>
     )
   },
