@@ -76,3 +76,8 @@
 [role="tab"] {
   margin-left: 3px;
 }
+
+/* Nextra banner */
+.dark div.nextra-banner-container {
+  background: #3333
+}
