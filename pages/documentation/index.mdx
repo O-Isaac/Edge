@@ -6,13 +6,19 @@ image: https://img.youtube.com/vi/bAZFR-5VsI4/maxresdefault.jpg
 
 import { Steps, Callout } from "nextra/components";
 import { Nexus } from "../../components/Nexus.jsx";
+import { Tabs, Tab } from 'nextra/components'
+
+<Callout type="warning" emoji="⚠️">
+  All mods in this list are for Skyrim Special Edition, but you can try searching and installing mods for the Legendary Edition.
+</Callout>
+<Callout type="info" emoji="🛈">
+  Recommended view first <a className="font-bold underline" href="#load-list">Load Order</a>, is not necesary download all mods
+</Callout>
 
 <Steps>
 ### Download requirements mods
  
-<Callout type="warning" emoji="⚠️">
-  All mods in this list are for Skyrim Special Edition, but you can try searching and installing mods for the Legendary Edition.
-</Callout>
+
 
 <section className="overflow-auto max-w-full mt-4">
   <table className="text-left border">
@@ -99,9 +105,7 @@ import { Nexus } from "../../components/Nexus.jsx";
 ### Load List
 
 The Load order should look like this
-
-<br />
-<section className="overflow-auto max-w-full">
+<section className="overflow-auto max-w-full mt-4">
   <table className="text-left border">
     <thead className="[&>tr>th]:p-4 [&>tr>th]:border">
       <tr>
@@ -113,8 +117,8 @@ The Load order should look like this
     <tbody className="[&>tr>th]:p-4 [&>tr>th]:border [&>tr>td]:p-4 [&>tr>td]:border">
       <tr>
         <th>SKYHUD</th>
-        <td>✖</td>
-        <td></td>
+        <td>✔</td>
+        <td>_Not a hard requirement_</td>
       </tr>
       <tr>
         <th>SKYUI</th>
@@ -123,8 +127,8 @@ The Load order should look like this
       </tr>
       <tr>
         <th>MOREHUD</th>
-        <td>✖</td>
-        <td></td>
+        <td>✔</td>
+        <td>_Not a hard requirement_</td>
       </tr>
       <tr>
         <th>TRUEHUD</th>
@@ -133,8 +137,8 @@ The Load order should look like this
       </tr>
       <tr>
         <th>BTPS</th>
-        <td>✖</td>
-        <td></td>
+        <td>✔</td>
+        <td>_Not a hard requirement_</td>
       </tr>
       <tr>
         <th>SIMPLE ACTIVATE</th>
@@ -153,8 +157,8 @@ The Load order should look like this
       </tr>
       <tr>
         <th>QUICKLOOT EE</th>
-        <td>✖</td>
-        <td></td>
+        <td>✔</td>
+        <td>_Not a hard requirement_</td>
       </tr>
       <tr>
         <th>COMPASS NAVIGATION OVERHAUL + INFINITY UI</th>
@@ -168,13 +172,13 @@ The Load order should look like this
       </tr>
       <tr>
         <th>DEAR DIARY DM</th>
-        <td>✖</td>
-        <td></td>
+        <td>✔</td>
+        <td>_Not a hard requirement_</td>
       </tr>
       <tr>
         <th>UNTARNISHED UI</th>
-        <td>✖</td>
-        <td></td>
+        <td>✔</td>
+        <td>_Not a hard requirement_</td>
       </tr>
       <tr>
         <th>DBVO</th>
@@ -185,11 +189,6 @@ The Load order should look like this
         <th>EDGE UI</th>
         <td>✖</td>
         <td>Obligatory</td>
-      </tr>
-      <tr>
-        <th>DBVO Untarnished patch</th>
-        <td>✔</td>
-        <td>_Only if you use DBVO_</td>
       </tr>
       <tr>
         <th>any font replacer that you wanna use</th>
