@@ -5,14 +5,14 @@ import Logo from "./components/Logo";
 export default {
   logo: <Logo />,
   docsRepositoryBase: "https://github.com/O-Isaac/Edge-UI-Docs/tree/master",
-  banner: {
-    key: 'lamas-release',
-    text: (
-      <a href="https://edge-ui-docs.vercel.app/documentation/widgets/valhalla-combat-sfx-timing-block" target="_blank">
-        🎉 Valhalla Combat - Perfect timing block SFX Replacer is released. Read more →
-      </a>
-    )
-  },
+  // banner: {
+  //   key: 'lamas-release',
+  //   text: (
+  //     <a href="https://edge-ui-docs.vercel.app/documentation/widgets/valhalla-combat-sfx-timing-block" target="_blank">
+  //       🎉 Valhalla Combat - Perfect timing block SFX Replacer is released. Read more →
+  //     </a>
+  //   )
+  // },
   project: {
     link: "https://discord.gg/5stwNU5M",
     icon: (
