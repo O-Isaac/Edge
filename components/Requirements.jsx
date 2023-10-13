@@ -1,4 +1,24 @@
+const RequirementsRows = ({ children }) => {
+    const isOnly = !Array.isArray(children)
 
+    if (isOnly) {
+        return (
+            <tr>
+                <td>
+                    {children}
+                </td>
+            </tr>
+        )
+    }
+
+    return children.map((child, index) => (
+        <tr key={index}>
+           <td>
+               {child}
+           </td>
+        </tr>
+   ))
+}
 
 const Requirements = ({ children }) => {
     return ( 
@@ -10,19 +30,7 @@ const Requirements = ({ children }) => {
                     </tr>
                 </thead>
                 <tbody className="[&>tr>th]:p-4 [&>tr>th]:border [&>tr>td]:p-4 [&>tr>td]:border">
-                    {Array.isArray(children) ? children.map((child, index) => (
-                         <tr key={index}>
-                            <th>
-                                {child}
-                            </th>
-                         </tr>
-                    )) : (
-                        <tr>
-                            <th>
-                                {children}
-                            </th>
-                         </tr>
-                    )}
+                    <RequirementsRows>{children}</RequirementsRows>
                 </tbody>
             </table>
       </section>
