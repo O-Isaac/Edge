@@ -1,0 +1,168 @@
+---
+title: "Edge UI"
+description: A guide how to install edge ui
+head:
+  - tag: meta
+    property: og:image
+    content: https://edge-ui-docs.vercel.app/images/LamasTinyHud-Reskin.png
+  - tag: meta
+    property: image
+    content: https://edge-ui-docs.vercel.app/images/LamasTinyHud-Reskin.png
+---
+
+import { Card, Icon } from '@astrojs/starlight/components';
+
+<Card icon="information" color="blue">
+  All mods in this list are for Skyrim Special Edition, but you can try searching and installing mods for the Legendary Edition.
+</Card>
+
+Ultimate interface redesign mod for skyrim special edition and aniversary edition
+
+## Download & Load Order
+
+You should download and install mods in this order.
+
+<table>
+  <thead>
+    <tr>
+      <th>\#</th>
+      <th>Mod Name</th>
+      <th>Mandatory</th>
+      <th>Requeriments</th>
+      <th>Download</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>SkyHUD</td>
+      <td></td>
+      <td></td>
+      <td><a href="https://www.nexusmods.com/skyrimspecialedition/mods/12604">Nexus Page</a></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>SkyUI</td>
+      <td>✔</td>
+      <td></td>
+      <td><a href="https://www.nexusmods.com/skyrimspecialedition/mods/463">Nexus Page</a></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>MoreHUD</td>
+      <td></td>
+      <td></td>
+      <td><a href="https://www.nexusmods.com/skyrimspecialedition/mods/12688">Nexus Page</a></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>TrueHUD</td>
+      <td>✔</td>
+      <td></td>
+      <td><a href="https://www.nexusmods.com/skyrimspecialedition/mods/62775">Nexus Page</a></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>BTPS</td>
+      <td></td>
+      <td></td>
+      <td><a href="https://www.nexusmods.com/skyrimspecialedition/mods/64339">Nexus Page</a></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>SKYRIM SOULS RE</td>
+      <td></td>
+      <td></td>
+      <td><a href="https://www.nexusmods.com/skyrimspecialedition/mods/27859">Nexus Page</a></td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>SHOW PLAYER IN MENUS</td>
+      <td></td>
+      <td></td>
+      <td><a href="https://www.nexusmods.com/skyrimspecialedition/mods/81291">Nexus Page</a></td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>QUICKLOOT EE</td>
+      <td></td>
+      <td></td>
+      <td><a href="https://www.nexusmods.com/skyrimspecialedition/mods/69980">Nexus Page</a></td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td><span style="font-size: small;">COMPASS NAVIGATION OVERHAUL</span></td>
+      <td>✔</td>
+      <td>Install Infinty UI</td>
+      <td><a href="https://www.nexusmods.com/skyrimspecialedition/mods/74484">Nexus Page</a></td>
+    </tr>
+    <tr>
+      <td colspan="5" style="text-align:center;">Up to this point the load order relative to each other doesn't matter</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>DEAR DIARY DM	</td>
+      <td></td>
+      <td></td>
+      <td><a href="https://www.nexusmods.com/skyrimspecialedition/mods/60837">Nexus Page</a></td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>UNTARNISHED UI</td>
+      <td></td>
+      <td></td>
+      <td><a href="https://www.nexusmods.com/skyrimspecialedition/mods/75188">Nexus Page</a></td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>DBVO</td>
+      <td></td>
+      <td>Install a patch</td>
+      <td><a href="https://www.nexusmods.com/skyrimspecialedition/mods/84329">Nexus Page</a></td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>EDGE UI</td>
+      <td>✔</td>
+      <td></td>
+      <td><a href="/">Discord</a></td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>any font replacer</td>
+      <td></td>
+      <td><span>Oblivion icons patch</span></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+## Frequently Asked Questions
+
+<Card title="How to make the Stamina/Health bars colored?">
+  Rename hudmenu colored.swf to hudmenu.swf (either rename the original file or delete it beforehand)
+</Card>
+
+<Card title="How to set bars to top left position?">
+  Rename skyhud - top playerbars.txt to skyhud.txt (either rename the original file or delete it beforehand)
+</Card>
+
+<Card title="How to get the CSM Tweenmenu?">
+  Rename Tweenmenu CSM.swf to tweenmenu.swf
+</Card>
+
+<Card title="How to get the left-sided Sleep/Wait menu?">
+  Rename sleepwaitmenu - left sided.swf to sleepwaitmenu.swf
+</Card>
+
+<Card title="How to get the 21:9 Favorites menu?">
+  Rename favoritesmenu 21-9.swf to favoritesmenu.swf (either rename the original file or delete it beforehand)
+</Card>
+
+<Card title="MoreHUD preset is not working">
+  You need reload moreHUD:
+    1. Uninstall moreHUD via MCM
+    2. Load save without moreHUD esp active
+    3. Re-enabling moreHUD and load EdgeUI preset via MCM.
+</Card>

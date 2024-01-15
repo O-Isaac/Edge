@@ -1,0 +1,33 @@
+---
+title: "Edge UI"
+description: Your go-to hub for seamlessly replacing and enhancing your game interface. Elevate your experience effortlessly
+template: splash
+head:
+  - tag: title
+    content: Home | Edge Docs
+hero:
+  title: Edge Docs
+  tagline: Your go-to hub for seamlessly replacing and enhancing your game interface. Elevate your experience effortlessly
+  actions:
+    - text: Read the docs
+      link: /mods/ui
+      icon: right-arrow
+      variant: primary
+    - text: Download
+      link: https://discord.com/invite/5stwNU5M
+      icon: discord
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+import Hero from "../../components/hero.astro"
+
+<CardGrid stagger>
+  <Card title="Design" icon="pencil">
+    Elevate your gaming with a sleek, new UI design. A perfect blend of form and function for an unparalleled visual experience.
+  </Card>
+  <Card title="Inmersive" icon="puzzle">
+    Immerse yourself in a seamless UI that enhances your gaming environment. Dynamic visuals and interactive elements redefine your gaming experience.
+  </Card>
+</CardGrid>
+
+<Hero />
