@@ -5,7 +5,7 @@ import metatags from './meta.config.mjs';
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://edge-ui-docs.vercel.app",
+	site: "https://beta-edge-ui-docs.vercel.app",
 	integrations: [
 		starlight({
 			title: 'Docs',
