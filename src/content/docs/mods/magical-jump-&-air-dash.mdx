@@ -5,17 +5,22 @@ head:
   - tag: meta
     attrs:
       property: og:image
-      content: https://img.youtube.com/vi/PfkBVvt53Ss/maxresdefault.jpg
+      content: /assets/images/original/magical-jump-sfx.jpg
   - tag: meta
     attrs:
       property: image
-      content: https://img.youtube.com/vi/PfkBVvt53Ss/maxresdefault.jpg
+      content: /assets/images/original/magical-jump-sfx.jpg
 ---
 
 import { Card } from '@astrojs/starlight/components';
-import Youtube from "../../../components/youtube.astro"
+import Youtube from "@components/youtube.astro"
+import Image from "@components/image.astro"
 
-![Magical Jump & Air Dash Cover Image](https://img.youtube.com/vi/PfkBVvt53Ss/maxresdefault.jpg)
+<Image
+  thumbnailSrc="/assets/images/minified/magical-jump-sfx.webp"
+  src="/assets/images/original/magical-jump-sfx.jpg" 
+  alt="Magical Jump & Air Dash Cover Image"
+/>
 
 Just amazing fx/sfx replacer for Magical Jump & Air Dash
 

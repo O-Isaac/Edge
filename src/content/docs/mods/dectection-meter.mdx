@@ -5,16 +5,21 @@ head:
   - tag: meta
     attrs:
       property: og:image
-      content: https://cdn.discordapp.com/attachments/1150463532761104466/1150463533159547041/yt_preview_detection_meter.jpg
+      content: /assets/images/original/detection-meter.jpg
   - tag: meta
     attrs:
       property: image
-      content: https://cdn.discordapp.com/attachments/1150463532761104466/1150463533159547041/yt_preview_detection_meter.jpg
+      content: /assets/images/original/detection-meter.jpg
 ---
 
 import { Card } from '@astrojs/starlight/components';
+import Image from "@components/image.astro"
 
-![Detection Meter Showcase](https://cdn.discordapp.com/attachments/1150463532761104466/1150463533159547041/yt_preview_detection_meter.jpg)
+<Image 
+  thumbnailSrc="/assets/images/minified/detection-meter.webp"
+  src="/assets/images/original/detection-meter.jpg" 
+  alt="Dectection Meter Showcases" 
+/>
 
 I just wanted to refresh a cool mod.
 

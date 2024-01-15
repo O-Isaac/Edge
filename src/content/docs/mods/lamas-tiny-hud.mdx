@@ -5,17 +5,23 @@ head:
   - tag: meta
     attrs:
       property: og:image
-      content: https://media.discordapp.net/attachments/1147945161511424090/1147945161872113855/yt_previeww.jpg
+      content: /assets/images/original/lamas.jpg
   - tag: meta
     attrs:
       property: image
-      content: https://media.discordapp.net/attachments/1147945161511424090/1147945161872113855/yt_previeww.jpg
+      content: /assets/images/original/lamas.jpg
 ---
 
 import { Tabs, TabItem, Card } from '@astrojs/starlight/components';
+import Image from "@components/image.astro"
 
-
-![Lamas Tiny Hud Showcase Image](https://media.discordapp.net/attachments/1147945161511424090/1147945161872113855/yt_previeww.jpg)
+<Image 
+  height="720" 
+  width="1280" 
+  thumbnailSrc="/assets/images/minified/lamas.webp" 
+  src="/assets/images/original/lamas.jpg" 
+  alt="Lamas Tiny Hud Cover Image" 
+/>
 
 The replacer was heavily inspired by the quick slot menu from Horizon Zero Dawn game. Also I want to express my deep gratitude to the author of the original Lamas Tiny Hud mod @mlthelama, for the fact that he contributed to the technical implementation of this replacer, so don't forget to Endorse his mod! Premade (bottom-left) presets for 16x9 & 21x9 proportions are included in replacer, check FAQ below to understand how to apply them.
 

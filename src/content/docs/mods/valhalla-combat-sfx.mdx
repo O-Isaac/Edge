@@ -5,14 +5,21 @@ head:
   - tag: meta
     attrs:
       property: og:image
-      content: https://cdn.discordapp.com/attachments/1151570163255214152/1151570163955675227/PREVIEW_PSD_valhalla.jpg
+      content: /assets/images/original/valhalla-combat.jpg
   - tag: meta
     attrs:
       property: image
-      content: https://cdn.discordapp.com/attachments/1151570163255214152/1151570163955675227/PREVIEW_PSD_valhalla.jpg
+      content: /assets/images/original/valhalla-combat.jpg
 ---
 
 import { TabItem, Tabs } from '@astrojs/starlight/components';
+import Image from "@components/image.astro"
+
+<Image 
+  thumbnailSrc="/assets/images/minified/valhalla-combat.webp"
+  src="/assets/images/original/valhalla-combat.jpg" 
+  alt="Valhalla Combat Banner Image" 
+/>
 
 For those who hate the standard sound of perfect timing blocking (because it really hurts the ears) using Valhalla Combat, get this replacer.
 
