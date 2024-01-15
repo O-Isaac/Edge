@@ -1,0 +1,28 @@
+---
+interface Props {
+    videoId: string,
+    videoTitle?: string
+}
+
+
+const { videoId, videoTitle } = Astro.props
+---
+
+<section>
+    <span class="youtube-title">{videoTitle}</span>
+    <lite-youtube class="youtube-player" videotitle={videoTitle}  videoid={videoId}></lite-youtube>
+</section>
+
+<style is:inline>
+    .youtube-title {
+        font-size: 1.265rem;
+    }
+    .youtube-player {
+        border-radius: .365rem;
+        overflow: hidden;
+    }
+</style>
+
+<script>
+    import '@justinribeiro/lite-youtube';
+</script>

@@ -11,6 +11,9 @@ dependencies:
   '@astrojs/starlight':
     specifier: ^0.15.2
     version: 0.15.2(astro@4.0.9)
+  '@justinribeiro/lite-youtube':
+    specifier: ^1.5.0
+    version: 1.5.0
   astro:
     specifier: ^4.0.1
     version: 4.0.9(typescript@5.3.3)
@@ -909,6 +912,10 @@ packages:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.1
       '@jridgewell/sourcemap-codec': 1.4.15
+    dev: false
+
+  /@justinribeiro/lite-youtube@1.5.0:
+    resolution: {integrity: sha512-TU92RKtz9BI9PRYrVwDIUsnFadLZtqRKWl1ZOdbxb7roJDb8Dd/xURllAsLEmCg6oJNyhXlVa5RsnUc0EKd8Cw==}
     dev: false
 
   /@mdx-js/mdx@3.0.0:

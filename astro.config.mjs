@@ -1,12 +1,15 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
+import metatags from './meta.config.mjs';
+
 // https://astro.build/config
 export default defineConfig({
 	site: "https://edge-ui-docs.vercel.app",
 	integrations: [
 		starlight({
 			title: 'Docs',
+			head: metatags,
 			logo: {
 				src: "./src/assets/logo.webp"
 			},
@@ -20,14 +23,6 @@ export default defineConfig({
 					label: 'Mods',
 					autogenerate: { directory: "mods" }
 				},
-				// {
-				// 	label: 'FAQ',
-				// 	autogenerate: { directory: "guides" }
-				// },
-				// {
-				// 	label: 'Reference',
-				// 	autogenerate: { directory: 'reference' },
-				// },
 			],
 		}),
 	],
