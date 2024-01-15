@@ -2,14 +2,14 @@
     --sl-color-text-accent: black;
     --hero-bg:
         linear-gradient(to top, rgba(255, 255, 255), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4), transparent),
-        url(/hero-bg.png) top left/cover;
+        url(/hero-bg.jpg) top left/cover;
 }
 
 :root[data-theme='dark'], [data-theme='dark'] ::backdrop {
     --sl-color-text-accent: white;
     --hero-bg: 
         linear-gradient(to top, rgba(23, 24, 28), rgba(23, 24, 28, 0.8), rgba(23, 24, 28, 0.4), transparent),
-        url(/hero-bg.png) top left/cover;
+        url(/hero-bg.jpg) top left/cover;
 }
 
 /* Site title  */
