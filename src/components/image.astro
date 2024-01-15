@@ -14,7 +14,7 @@ const { src, height = 720, width = 1280, alt, thumbnailSrc } = Astro.props
 
 <figure class="pswp-gallery" id="unique-photo">
     <a href={src} target="_blank" data-pswp-width={width} data-pswp-height={height}>
-        <img fetchpriority="high" src={thumbnailSrc || src} alt={alt}>
+        <img height={height} width={width} fetchpriority="high" src={thumbnailSrc || src} alt={alt}>
     </a>
 </figure>
 
