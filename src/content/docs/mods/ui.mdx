@@ -5,14 +5,17 @@ head:
   - tag: meta
     attrs:
       property: og:image
-      content: https://edge-ui-docs.vercel.app/images/LamasTinyHud-Reskin.png
+      content: /assets/images/minified/hero-bg.webp
   - tag: meta
     attrs:
       property: image
-      content: https://edge-ui-docs.vercel.app/images/LamasTinyHud-Reskin.png
+      content: /assets/images/minified/hero-bg.webp
 ---
 
 import { Card } from '@astrojs/starlight/components';
+import Image from "@components/image.astro"
+
+<Image height="1440" width="3440" src="/assets/images/minified/hero-bg.webp" alt="Edge UI Cover Image" />
 
 <Card icon="information" color="blue">
   All mods in this list are for Skyrim Special Edition, but you can try searching and installing mods for the Legendary Edition.
