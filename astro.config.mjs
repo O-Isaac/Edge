@@ -14,7 +14,7 @@ export default defineConfig({
 				src: "./src/assets/logo.webp"
 			},
 			social: {
-				discord: 'https://discord.gg/5stwNU5M'
+				discord: 'https://discord.gg/5stwNU5M',
 			},
 			favicon: "/favicon.png",
 			customCss: ['./src/styles/custom.css'],
@@ -24,6 +24,9 @@ export default defineConfig({
 					autogenerate: { directory: "mods" }
 				},
 			],
+			components: {
+				Head: "./src/components/HeadViewTransition.astro",
+			}
 		}),
 	],
 });
