@@ -18,14 +18,26 @@ const { src, height = 720, width = 1280, alt, thumbnailSrc } = Astro.props
     </a>
 </figure>
 
-<script>
-    import PhotoSwipeLightbox from 'photoswipe/lightbox';
 
-    const lightbox = new PhotoSwipeLightbox({
-        gallery: '#unique-photo',
-        children: 'a',
-        pswpModule: () => import('photoswipe')
-    });
+<head>
+    <script>
+        import PhotoSwipeLightbox from 'photoswipe/lightbox';
+        
+        let loaded = false;
 
-    lightbox.init()
-</script>
+        const lightbox = new PhotoSwipeLightbox({
+            gallery: '#unique-photo',
+            children: 'a',
+            pswpModule: () => import('photoswipe')
+        });
+
+        document.addEventListener("astro:after-swap", function () {
+            loaded = true
+            lightbox.init()
+        })
+
+        if (!loaded) {
+            lightbox.init()
+        }
+    </script>
+</head>
