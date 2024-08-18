@@ -15,10 +15,15 @@ export default defineConfig({
 			},
 			social: {
 				discord: 'https://discord.gg/5stwNU5M',
+				patreon: 'https://www.patreon.com/EdgeUI'
 			},
 			favicon: "/favicon.png",
 			customCss: ['./src/styles/custom.css'],
 			sidebar: [
+				{
+					label: "Guides",
+					autogenerate: { directory: "guides" }
+				},
 				{
 					label: 'Mods',
 					autogenerate: { directory: "mods" }
