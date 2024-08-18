@@ -16,11 +16,7 @@ import { Card } from '@astrojs/starlight/components';
 
 import Image from "@components/image.astro"
 import Youtube from "@components/youtube.astro"
-import Tags from "@components/tags.astro"
-
-import Patreon from "@embeds/patreon.astro"
-
-<Tags tags={["Suki", "Replacer", "Pay"]} />
+import Patreon from "@components/patreon.astro"
 
 <Image 
   thumbnailSrc="/assets/images/minified/suki's-paraglider-&-magical-jumping-apocrypha-edition.webp"
@@ -65,11 +61,7 @@ Just install all the necessary mods and let the replacer overwrite them.
 
 ## Download
 
-<Patreon name="SUKI" 
-  patreonId={93951173}
-  patreonDescription="To download this mod you need be suki's patreon"
-  patreonPost="https://www.patreon.com/posts/94673796" 
-/>
+<Patreon username="SUKI" patreon="https://www.patreon.com/sukki" />
 
 ## Frequently Asked Questions
 
