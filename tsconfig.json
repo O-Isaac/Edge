@@ -4,9 +4,8 @@
     "baseUrl": ".",
     "paths": {
       "@components/*": ["src/components/*"],
-      "@embeds/*": ["src/components/embeds/*"],
+      "@icons/*": ["src/icons/*"],
       "@schemas/*": ["src/types/*"],
-      "@apis/*": ["src/apis/*"]
     }
   }
 }
