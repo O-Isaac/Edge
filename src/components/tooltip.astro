@@ -1,0 +1,24 @@
+---
+interface Props {
+    content: string
+}
+
+import 'tippy.js/dist/tippy.css'; 
+import 'tippy.js/animations/shift-away.css';
+---
+
+<span data-tippy-content={Astro.props.content} id="tooltip">
+    <slot /></slot>
+</span>
+
+<script>
+    import tippy from 'tippy.js';
+    tippy('#tooltip', { animation: "shift-away" });
+</script>
+
+<style>
+    span {
+        display: inline-block;
+        width: fit-content;
+    }
+</style>
