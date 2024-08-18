@@ -1,0 +1,31 @@
+---
+interface Props {
+    username: string
+    patreon: string
+}
+---
+
+<a class="patreon_wrapper" target="_blank" href={Astro.props.patreon}>
+    Become patreon of {Astro.props.username}
+</a>
+
+<style>
+    .patreon_wrapper {
+        display: block;
+        margin-top: 2rem;
+        padding: 0.8rem;
+        background-color: #F96854;
+        text-align: center;
+        text-decoration: none;
+        font-weight: 500;
+        transition: background 500ms;
+    }
+
+    .patreon_wrapper:hover {
+        background-color: #fc432b;
+    }
+
+    html[data-theme="light"] .patreon_wrapper {
+        color: white;
+    }
+</style>
