@@ -1,0 +1,183 @@
+---
+title: Understanding SkyHUD
+description: Learn how to customize and optimize your Skyrim user interface with SkyHUD.
+head:
+  - tag: meta
+    attrs:
+      property: og:image
+      content: /assets/images/original/uskyhud.webp
+  - tag: meta
+    attrs:
+      property: image
+      content: /assets/images/original/uskyhud.webp
+---
+
+import Image from "@components/image.astro"
+
+<Image 
+  thumbnailSrc="/assets/images/minified/uskyhud.webp"
+  src="/assets/images/original/uskyhud.webp" 
+  alt="Understanding SkyHUD" 
+/>
+
+Toggle HUD elements on or off, scale sizes, change positions and swap elements with alternative version. Features dot crosshair, slim compass, alternate ammo display, detached compass markers and built-in support for font mods.
+
+## Edge UI with SkyHUD
+
+Most of UI elements that you see on your screen in skyrim are controlled thru skyhud.txt, located in `*...\mods\Edge UI\interface\skyhud* folder`
+*(if you use another UI replacer, change the path accordingly)*
+
+import { Card } from "@astrojs/starlight/components";
+
+<Card title="Quick note" icon="pencil">
+  The last skyhud.txt file in your loadlist (left MO2 panel) takes priority over everything else, so make sure that you're editing the very last one.
+</Card>
+
+
+## Understanding the [Gameplay] Section
+
+The `[Gameplay]` section of the SkyHUD configuration file controls various aspects of Skyrim's (HUD) behavior, specifically related to gameplay elements. 
+Below is an example configuration with explanations of each setting:
+
+```
+[Gameplay]
+bHideActivateButton=0   <- Toggles the [E] active interaction button.
+bHideStealthText=0      <- Toggles the text notification [HIDDEN] while in stealth mode. Change to 0 if you want to display the Stealth Widget
+bHideStealthMeter=1     <- Toggles the stealth status icon [The EYE icon] while in stealth mode. Change to 0 if you want to display the Stealth Widget
+uPersistentMeter=1      <- This controls the Player Bars (Health/Stamina/Magicka) visibility. Values: 0 - Bars are only displayed when you take damage or sprint. 1 - Bars are always visible. 2 - Bars are always off
+```
+
+- **bHideActivateButton**: Set this option to 1 to hide the [E] interaction button, which appears when you can interact with objects or characters. By default (0), the button is visible.
+- **bHideStealthText**: This controls the visibility of the "[HIDDEN]" text while sneaking. If set to 1, the text is hidden, which can be useful if you prefer a cleaner HUD when sneaking. The default is 0, which displays the text.
+- **bHideStealthMeter**: This toggles the eye icon that indicates your stealth status. By default, it's set to 1 (hidden). Change this to 0 to show the icon while sneaking.
+- **uPersistentMeter**: This setting determines when the player's health, stamina, and magicka bars are visible. Set to 0, the bars only appear when necessary (e.g., during combat or sprinting). A value of 1 keeps them visible at all times, while 2 hides them completely.
+
+## Understanding the [Interface] Section
+
+The `[Interface]` section in the SkyHUD configuration file controls elements of the game's user interface that are displayed on the screen. Below is an explanation of the available setting in this section
+
+```
+[Interface]
+bShowClock=0    <- Turn In-game clock on/off
+
+```
+
+- **bShowClock**: This option controls whether an in-game clock is displayed on the HUD. Setting this to 1 enables the clock, showing the current time in Skyrim. Setting it to 0 disables the clock, resulting in a cleaner interface.
+
+## Understanding the [Scale] Section
+
+The `[Scale]` section of the SkyHUD configuration file is where you can adjust the size of various HUD elements to better suit your preferences. Each setting controls the scale of a specific UI component, allowing you to fine-tune the visual experience. Here’s a breakdown of each option:
+
+```
+fClock=0.6              <- Clock Widget size
+fHealth=1               <- Health bar size
+fMagica=0.7             <- Magicka bar size
+fStamina=0.7            <- Stamina bar size
+fChargeMeter=1          <- Enchantment/Oxygen(if you use oxygen meter 1) meter size
+fCrosshair=1.2          <- Default Crosshair size 
+fCompass=0.85           <- Compass size
+fCompassMarker=0.6      <- Compass Markers size
+fSubtitle=0.8           <- Subtitles size (does not change the subtitle size in dialogues)
+fStealthMeter=0.75      <- Stealth Meter size
+fLocationInfo=0         <-  Default Location info notification
+fMessageInfo=0.6        <- Size of text notifications, for example MCM mod initiations, Experience Gained, SunHelm conditions change etc
+fArrowInfo=1.2          <- Arrow Widget size
+fActivatePrompt=0       <- Default Interact Widget size
+fObjectiveText=0.7      <- Quest objective notifications size
+fLevelUpMeter=0.8       <- Levelling up notification size
+fAnimatedLetters=0.5    <- Default Dragon Word learned/Skill Increased text size (currently redundant in Edge UI, as I use a different approach) 
+```
+
+- **fClock**: Adjusts the size of the in-game clock widget, if enabled in the [Interface] section. A value of 1 represents the default size, with values less than 1 shrinking the clock and values greater than 1 enlarging it.
+- **fHealth**, fMagicka, fStamina: These control the sizes of the health, magicka, and stamina bars, respectively. Adjust these to make the bars more or less prominent based on your preferences.
+- **fChargeMeter**: Controls the size of the enchantment charge meter or oxygen meter, depending on your setup.
+- **fCrosshair**: Adjusts the size of the crosshair, allowing you to make it more noticeable or more subtle based on your preference.
+- **fCompass**: Controls the size of the compass at the top of the screen, with fCompassMarker adjusting the size of the markers on the compass (e.g., quest markers, location markers).
+- **fSubtitle**: Modifies the size of subtitles that appear during gameplay, though it does not affect dialogue subtitles.
+- **fStealthMeter**: Adjusts the size of the stealth meter (eye icon) that indicates your stealth status when sneaking.
+- **fLocationInfo**: Controls the size of location notifications that appear when you discover new areas.
+- **fMessageInfo**: Alters the size of on-screen text notifications such as those from mods or system messages.
+- **fArrowInfo**: Adjusts the size of the arrow widget that appears during gameplay, typically when indicating arrow counts or directions.
+- **fActivatePrompt**: Changes the size of the interact widget, which appears when you can interact with objects or NPCs.
+- **fObjectiveText**: Modifies the size of quest objective notifications that appear on screen.
+- **fLevelUpMeter**: Controls the size of the notification that appears when you level up.
+- **fAnimatedLetters**: Adjusts the size of animated text notifications, such as those for learning dragon words or increasing skills.
+
+## Understanding the [Position] Section
+
+<Card title="Quick note" icon="pencil">
+  If the first parameter set to 1 (bLockCompass=, bLockMagickaMeter= etc),- it will use default position values, set it to 0 for it to take effect. Y is UP/DOWN position, X is LEFT/RIGHT
+</Card>
+
+The [Position] section of the SkyHUD configuration file allows you to customize the on-screen positioning of various HUD elements. This section gives you precise control over where each element appears, by adjusting the X (horizontal) and Y (vertical) coordinates. Here's a breakdown of how each setting works:
+
+```
+[Position]
+
+bLockHealthMeter=0
+fHealthPosX=95          <- Health Bars X position. Lower numbers = move to the left, Higher = to the right
+fHealthPosY=668         <- Health Bars Y position. Lower numbers = moves up, Higher = moves down
+
+bLockMagickaMeter=0
+fMagicaPosX=146         <- Magicka Bars X position. Lower numbers = move to the left, Higher = to the right
+fMagicaPosY=680         <- Magicka Bars Y position. Lower numbers = moves up, Higher = moves down
+
+bLockStaminaMeter=0
+fStaminaPosX=-2         <- Stamina Bars X position. Lower numbers = move to the left, Higher = to the right
+fStaminaPosY=680        <- Stamina Bars Y position. Lower numbers = moves up, Higher = moves down
+
+bLockArrowInfo=0
+fArrowInfoPosX=980      <- Arrow Widget X position. Lower numbers = move to the left, Higher = to the right
+fArrowInfoPosY=633      <- Arrow Widget Y position. Lower numbers = moves up, Higher = moves down
+
+bLockCompass=0
+fCompassPosX=           <- Compass X position. Lower numbers = move to the left, Higher = to the right. Empty = Center/Default
+fCompassPosY=60         <- Compass Y position. Lower numbers = moves up, Higher = moves down
+
+bLockSubtitle=0
+fSubtitlePosX=          <- Subtitle X position. Lower numbers = move to the left, Higher = to the right. Empty = Center/Default
+fSubtitlePosY=550       <- Subtitles Y position. Lower numbers = moves up, Higher = moves down
+
+bLockStealthMeter=1
+fStealthMeterPosX=      <- Stealth Meter X position. Lower numbers = move to the left, Higher = to the right. Empty = Center/Default
+fStealthMeterPosY=      <- Stealth Meter X position. Lower numbers = moves up, Higher = moves down
+
+bLockMessageInfo=0
+fMessageInfoPosX=920    <- Messages text notifications X position. Lower numbers = move to the left, Higher = to the right.
+fMessageInfoPosY=55     <- Messages text notifications Y position. Lower numbers = moves up, Higher = moves down
+
+bLockClock=1
+fClockPosX=             <- Clock X position. Lower numbers = move to the left, Higher = to the right.
+fClockPosY=             <- Clock Y position. Lower numbers = moves up, Higher = moves down
+
+bLockObjectiveText=1
+fObjectiveTextPosX=     <- Quest Objectives text Y position. Lower numbers = move to the left, Higher = to the right. Empty = Center/Default
+fObjectiveTextPosY=180  <- Quest Objectives text Y position. Lower numbers = moves up, Higher = moves down
+
+bLockLevelUpMeter=1
+fLevelUpMeterPosX=840   <- Levelling up text X position. Lower numbers = move to the left, Higher = to the right. Empty = Center/Default
+fLevelUpMeterPosY=45    <- Levelling up text Y position. Lower numbers = moves up, Higher = moves down
+```
+
+- **fHealthPosX=95**: Health Bars X position. Lower numbers = move to the left, Higher = to the right.
+- **fHealthPosY=668**: Health Bars Y position. Lower numbers = move up, Higher = move down.
+- **fMagicaPosX=146**: Magicka Bars X position. Lower numbers = move to the left, Higher = to the right.
+- **fMagicaPosY=680**: Magicka Bars Y position. Lower numbers = move up, Higher = move down.
+- **fStaminaPosX=-2**: Stamina Bars X position. Lower numbers = move to the left, Higher = to the right.
+- **fStaminaPosY=680**: Stamina Bars Y position. Lower numbers = move up, Higher = move down.
+- **fArrowInfoPosX=980**: Arrow Widget X position. Lower numbers = move to the left, Higher = to the right.
+- **fArrowInfoPosY=633**: Arrow Widget Y position. Lower numbers = move up, Higher = move down.
+- **fCompassPosX=**: Compass X position. Lower numbers = move to the left, Higher = to the right. Empty = Center/Default.
+- **fCompassPosY=60**: Compass Y position. Lower numbers = move up, Higher = move down.
+- **fSubtitlePosX=**: Subtitle X position. Lower numbers = move to the left, Higher = to the right. Empty = Center/Default.
+- **fSubtitlePosY=550**: Subtitles Y position. Lower numbers = move up, Higher = move down.
+- **fStealthMeterPosX=**: Stealth Meter X position. Lower numbers = move to the left, Higher = to the right. Empty = Center/Default.
+- **fStealthMeterPosY=**: Stealth Meter Y position. Lower numbers = move up, Higher = move down.
+- **fMessageInfoPosX=920**: Messages text notifications X position. Lower numbers = move to the left, Higher = to the right.
+- **fMessageInfoPosY=55**: Messages text notifications Y position. Lower numbers = move up, Higher = move down.
+- **fClockPosX=**: Clock X position. Lower numbers = move to the left, Higher = to the right.
+- **fClockPosY=**: Clock Y position. Lower numbers = move up, Higher = move down.
+- **fObjectiveTextPosX=**: Quest Objectives text X position. Lower numbers = move to the left, Higher = to the right. Empty = Center/Default.
+- **fObjectiveTextPosY=180**: Quest Objectives text Y position. Lower numbers = move up, Higher = move down.
+- **fLevelUpMeterPosX=840**: Levelling up text X position. Lower numbers = move to the left, Higher = to the right. Empty = Center/Default.
+- **fLevelUpMeterPosY=45**: Levelling up text Y position. Lower numbers = move up, Higher = move down.
