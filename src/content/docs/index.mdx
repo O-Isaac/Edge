@@ -12,11 +12,14 @@ head:
   - tag: meta
     attrs:
       property: og:image
-      content: https://beta-edge-ui-docs.vercel.app/hero-bg.jpg
+      content: https://edge-ui-docs.vercel.app/hero-bg.jpg
+    attrs:
+      property: twitter:image
+      content: https://edge-ui-docs.vercel.app/hero-bg.jpg
   - tag: meta
     attrs:
       property: image
-      content: https://beta-edge-ui-docs.vercel.app/hero-bg.jpg
+      content: https://edge-ui-docs.vercel.app/hero-bg.jpg
 hero:
   title: Edge Docs
   tagline: Your go-to hub for seamlessly replacing and enhancing your game interface. Elevate your experience effortlessly
@@ -33,16 +36,18 @@ hero:
       icon: discord
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
-import Hero from "@components/hero.astro"
+import { Card, CardGrid } from "@astrojs/starlight/components";
+import Hero from "@components/hero.astro";
 
 <CardGrid stagger>
   <Card title="Design" icon="pencil">
-    Elevate your gaming with a sleek, new UI design. A perfect blend of form and function for an unparalleled visual experience.
+    Elevate your gaming with a sleek, new UI design. A perfect blend of form and
+    function for an unparalleled visual experience.
   </Card>
   <Card title="Inmersive" icon="puzzle">
-    Immerse yourself in a seamless UI that enhances your gaming environment. Dynamic visuals and interactive elements redefine your gaming experience.
+    Immerse yourself in a seamless UI that enhances your gaming environment.
+    Dynamic visuals and interactive elements redefine your gaming experience.
   </Card>
 </CardGrid>
 
-<Hero/>
+<Hero />
