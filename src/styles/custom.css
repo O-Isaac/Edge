@@ -1,32 +1,28 @@
-:root[data-theme='light'], [data-theme='light'] ::backdrop {
-    --sl-color-text-accent: black;
-    --hero-bg:
-        linear-gradient(to top, rgba(255, 255, 255), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4), transparent),
-        url(/assets/images/minified/hero-bg.webp) top left/cover;
+:root[data-theme="light"],
+[data-theme="light"] ::backdrop {
+  --sl-color-text-accent: black;
 }
 
-:root[data-theme='dark'], [data-theme='dark'] ::backdrop {
-    --sl-color-text-accent: white;
-    --hero-bg: 
-        linear-gradient(to top, rgba(23, 24, 28), rgba(23, 24, 28, 0.8), rgba(23, 24, 28, 0.4), transparent),
-        url(/assets/images/minified/hero-bg.webp) top left/cover;
+:root[data-theme="dark"],
+[data-theme="dark"] ::backdrop {
+  --sl-color-text-accent: white;
 }
 
 /* Site title  */
 
 .site-title {
-    gap: 0;
-    font-size: 1.3rem;
-    font-weight: bolder;
+  gap: 0;
+  font-size: 1.3rem;
+  font-weight: bolder;
 }
 
 .site-title > span::before {
-    content: "/";
-    margin-left: 5px;
-    font-weight: 400;
+  content: "/";
+  margin-left: 5px;
+  font-weight: 400;
 }
 
 .site-title > img {
-    height: 25px;
-    width: 25px;
+  height: 25px;
+  width: 25px;
 }
