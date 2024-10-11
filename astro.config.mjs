@@ -5,6 +5,9 @@ import metatags from "./meta.config.mjs";
 // https://astro.build/config
 export default defineConfig({
   site: "https://edge-ui-docs.vercel.app",
+  redirects: {
+    "/documentation": "/mods/ui",
+  },
   integrations: [
     starlight({
       title: "Docs",
