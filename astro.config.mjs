@@ -16,7 +16,7 @@ export default defineConfig({
         src: "./src/assets/logo.webp",
       },
       social: {
-        discord: "https://discord.gg/5stwNU5M",
+        discord: "https://discord.gg/pQ2bmN42",
         patreon: "https://www.patreon.com/EdgeUI",
       },
       favicon: "/favicon.png",
