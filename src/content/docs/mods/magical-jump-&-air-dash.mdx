@@ -1,6 +1,9 @@
 ---
 title: "Magical Jump & Air Dash"
 description: Just amazing fx/sfx replacer for Magical Jump & Air Dash
+image:
+  path: /assets/images/original/magical-jump-sfx.jpg
+  position: center left
 head:
   - tag: meta
     attrs:
@@ -12,64 +15,61 @@ head:
       content: /assets/images/original/magical-jump-sfx.jpg
 ---
 
-import { Card } from '@astrojs/starlight/components';
+import { Card, LinkCard, Steps } from '@astrojs/starlight/components';
 import Youtube from "@components/youtube.astro"
 import Image from "@components/image.astro"
+import Collapse from "@components/collapse.astro"
 
-<Image
-  thumbnailSrc="/assets/images/minified/magical-jump-sfx.webp"
-  src="/assets/images/original/magical-jump-sfx.jpg" 
-  alt="Magical Jump & Air Dash Cover Image"
-/>
+### Installation
 
-Just amazing fx/sfx replacer for Magical Jump & Air Dash
-
-## Magical Jump & Air Dash | Lightning - SFX Replacer
 Just amazing fx/sfx replacer for Magical Jump & Air Dash 
 
-## Requirements
+<Steps>
+  1. Download Magical Jumping mod
+    
+      | Mod | Download |
+      | :-- | :------- |
+      | Magical Jumping - Air Dash - Air Attack - Slam Attack | [Nexus Page](https://www.nexusmods.com/skyrimspecialedition/mods/89233) |
+      | Stylish Dodge Chaos - DMCO | [Nexus Page](https://www.nexusmods.com/skyrimspecialedition/mods/92548)
+  
+  2. Download Main mod (Magical Jump & Air Dash - Lightning - SFX Replacer by Eugene & SUKI)
 
-| Mod | Download |
-| :-- | :------- |
-| Magical Jumping - Air Dash - Air Attack - Slam Attack | [Nexus Page](https://www.nexusmods.com/skyrimspecialedition/mods/89233) |
-| Stylish Dodge Chaos - DMCO | [Nexus Page](https://www.nexusmods.com/skyrimspecialedition/mods/92548)
+      <LinkCard description="Your can download this mod in our discord server!" title='Download!'  href={"https://discord.gg/pQ2bmN42"} />
 
-## Download
-Check on [Discord](https://discord.gg/5stwNU5M)
+  3. Overwrite Magical Jump mod with replacer
 
-## Installation
-1. Download Magical Jumping mod
-2. Download Main mod (Magical Jump & Air Dash - Lightning - SFX Replacer by Eugene & SUKI)
-3. Overwrite Magical Jump mod with replacer
-4. If you want Gentle sound variant > download it and overwrite the replacer (Impactful sound variant by default comes with Main mod)
+      If you want Gentle sound variant > download it and overwrite the replacer (Impactful sound variant by default comes with Main mod)
+</Steps>
 
-## Frequently Asked Questions
-
-<Card title="Which version of Magical jump mod should I download?">
-_Doesn't matter_ 
-</Card>
-
-<Card title="For some reason I don't have jump animations!">
-_Download a mod like AddItemMenu > Use that spell/item from that mod > Select from the list mod called "doublejump.esp" > Take the "Enchanted Magic Ring" from there > Equip > JUMP!_
-</Card>
-
-<Card title="How to dash?">
-_Check your talent list (the same menu where magic is, just go to the lesser powers tab) > Select "Air Dash" > Press shout button (default "Z") > DASH!_
-</Card>
-
-<Card title="I still don't have the lightning effect.">
-_It's common problem since Magical Jumping 2.3 update. Make sure you set "explosion" setting instead of "platform" in "Visuals" tab in Magical Jump settings (In MCM menu)._
-</Card>
-
-<Card title="I have extra visuals on the first jump that you don't have in your video!">
-_Make sure you unchecked "First Hit Shader/Effect" setting in "Visuals" tab in Magical Jump settings (In MCM menu)._
-</Card>
-
-## Showcase video
+### Showcase
 
 <Youtube videoTitle="Magical Jump & Air Dash Showcase" videoId="PfkBVvt53Ss" />
 
-## Credits
+
+### Frequently Asked Questions
+
+<Collapse open title="Which version of Magical jump mod should I download?">
+_Doesn't matter_ 
+</Collapse>
+
+<Collapse open title="For some reason I don't have jump animations!">
+_Download a mod like AddItemMenu > Use that spell/item from that mod > Select from the list mod called "doublejump.esp" > Take the "Enchanted Magic Ring" from there > Equip > JUMP!_
+</Collapse>
+
+<Collapse open title="How to dash?">
+_Check your talent list (the same menu where magic is, just go to the lesser powers tab) > Select "Air Dash" > Press shout button (default "Z") > DASH!_
+</Collapse>
+
+<Collapse open title="I still don't have the lightning effect.">
+_It's common problem since Magical Jumping 2.3 update. Make sure you set "explosion" setting instead of "platform" in "Visuals" tab in Magical Jump settings (In MCM menu)._
+</Collapse>
+
+<Collapse open title="I have extra visuals on the first jump that you don't have in your video!">
+_Make sure you unchecked "First Hit Shader/Effect" setting in "Visuals" tab in Magical Jump settings (In MCM menu)._
+</Collapse>
+
+
+### Credits
 - Magical Jumping - **dunkd00d** (Nexus)
 - Air Dash - **elysees** (Nexus)
 - Airgetlam (SFX sources) - **SATAFINIX** (Nexus)

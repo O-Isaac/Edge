@@ -1,6 +1,9 @@
 ---
 title: "Valhalla Combat SFX Replace"
-description: For those who hate the standard sound of perfect timing blocking (because it really hurts the ears) using Valhalla Combat, get this replacer.
+description: For those who hate the standard sound of perfect timing blocking.
+image:
+  path: /assets/images/minified/valhalla-combat.webp
+  position: 10% center
 head:
   - tag: meta
     attrs:
@@ -12,44 +15,34 @@ head:
       content: /assets/images/original/valhalla-combat.jpg
 ---
 
-import { TabItem, Tabs } from '@astrojs/starlight/components';
+import { TabItem, Tabs, Steps, LinkCard } from '@astrojs/starlight/components';
 import Image from "@components/image.astro"
 
-<Image 
-  thumbnailSrc="/assets/images/minified/valhalla-combat.webp"
-  src="/assets/images/original/valhalla-combat.jpg" 
-  alt="Valhalla Combat Banner Image" 
-/>
+### Installation
 
-For those who hate the standard sound of perfect timing blocking (because it really hurts the ears) using Valhalla Combat, get this replacer.
+<Steps>
+  1. Download requirements and install them
+      
+      <LinkCard description="Download Vahalla Combat in nexus!" title='Valhalla Combat'  href={"https://www.nexusmods.com/skyrimspecialedition/mods/64741"} />
 
-## Requirements
+  2. Download replacer
 
-| Mod | Download |
-| :-- | :------- |
-| Valhalla Combat | [Nexus Page](https://www.nexusmods.com/skyrimspecialedition/mods/64741) |
+      <LinkCard description="Your can download this suki's replace in our discord server!" title='Download!'  href={"https://discord.gg/pQ2bmN42"} />
+        
 
-## Preview
+  3. Overwrite Valhalla Combat with my replacer
 
-<Tabs>
-  <TabItem label="Original">
-        <audio controls>
-            <source src="/sounds/valhalla-combat-sfx/original.wav" type="audio/wav" />
-        </audio>
-  </TabItem>
-  <TabItem label="Replace">
-        <audio controls>
-            <source src="/sounds/valhalla-combat-sfx/replacer.wav" type="audio/wav" />
-        </audio>
-  </TabItem>
-</Tabs>
-
-## Download
-
-Check on [Discord](https://discord.gg/5stwNU5M)
-
-## Installation
-
-1. Download requirements and install them
-2. Download replacer
-3. Overwrite Valhalla Combat with my replacer
+      <Tabs>
+        <TabItem label="Original">
+              <audio controls>
+                  <source src="/sounds/valhalla-combat-sfx/original.wav" type="audio/wav" />
+              </audio>
+        </TabItem>
+        <TabItem label="Replace">
+              <audio controls>
+                  <source src="/sounds/valhalla-combat-sfx/replacer.wav" type="audio/wav" />
+              </audio>
+        </TabItem>
+      </Tabs>
+      
+</Steps>

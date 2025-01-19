@@ -1,6 +1,9 @@
 ---
 title: "Detection Meter"
 description: The replacer was heavily inspired by the quick slot menu from Horizon Zero Dawn game
+image:
+  path: /assets/images/minified/detection-meter.webp
+  position: center left
 head:
   - tag: meta
     attrs:
@@ -12,32 +15,34 @@ head:
       content: /assets/images/original/detection-meter.jpg
 ---
 
-import { Card } from '@astrojs/starlight/components';
-import Image from "@components/image.astro"
-
-<Image 
-  thumbnailSrc="/assets/images/minified/detection-meter.webp"
-  src="/assets/images/original/detection-meter.jpg" 
-  alt="Dectection Meter Showcases" 
-/>
-
-I just wanted to refresh a cool mod.
-
-## Download
-
-| Mod | Download |
-| :-- | :------- |
-| Detection Meter SE | [Nexus Page](https://www.nexusmods.com/skyrimspecialedition/mods/63057) |
-| Detection Meter AE | [Nexus Page](https://www.nexusmods.com/skyrimspecialedition/mods/77350) |
+import { Card, LinkCard, Steps } from '@astrojs/starlight/components';
+import Collapse from "@components/collapse.astro"
 
 ## Installation
 
-    1. Download requirements and install them
-    2. Download reskin
-    3. Overwrite Detection Meter with my reskin
+<br/>
+
+<Steps>
+  1. Download requirements and install them
+      
+      | Mod | Download |
+      | :-- | :------- |
+      | Detection Meter SE | [Nexus Page](https://www.nexusmods.com/skyrimspecialedition/mods/63057) |
+      | Detection Meter AE | [Nexus Page](https://www.nexusmods.com/skyrimspecialedition/mods/77350) |
+
+  2. Download reskin
+
+      <LinkCard description="Your can download this mod in our discord server!" title='Download!'  href={"https://discord.gg/pQ2bmN42"} />
+
+  3. Overwrite Detection Meter with my reskin
+</Steps>
+
+
 
 ## Frequently Asked Questions
 
-<Card title="How can I use second version of reskin?">
+<br/>
+
+<Collapse open title="How can I use second version of reskin?">
 Go to `SKSE\Plugins\MaxsuDetectionMeter\OLD VARIANT` > drag & drop everything to MaxsuDetectionMeter folder > Overwrite
-</Card>
+</Collapse>
