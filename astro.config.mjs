@@ -1,6 +1,7 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 import metatags from "./meta.config.mjs";
+import starlightSidebarTopicsDropdown from 'starlight-sidebar-topics-dropdown'
 
 // https://astro.build/config
 export default defineConfig({
@@ -21,22 +22,28 @@ export default defineConfig({
       },
       favicon: "/favicon.png",
       customCss: ["./src/styles/custom.css"],
-      sidebar: [
-        {
-          label: "Guides",
-          autogenerate: {
-            directory: "guides",
+      plugins: [
+        starlightSidebarTopicsDropdown([
+          { 
+            label: "Guides", 
+            icon: "open-book", 
+            link: "/guides/skyhud",
+            items: [
+              { label: "Guides", autogenerate: { directory: "guides" }},
+            ]
           },
-        },
-        {
-          label: "Mods",
-          autogenerate: {
-            directory: "mods",
+          { 
+            label: "Mods", 
+            icon: "puzzle", 
+            link: "/mods/ui",
+            items: [
+              { label: "Mods", badge: { text: "New", variant: "success" }, autogenerate: { directory: "mods" }},
+            ]
           },
-        },
+        ])
       ],
       components: {
-        Head: "./src/components/HeadViewTransition.astro",
+        PageTitle: "@components/page-title.astro"
       },
     }),
   ],
