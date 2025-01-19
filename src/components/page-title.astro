@@ -1,0 +1,40 @@
+---
+export type { Props } from "@astrojs/starlight/props";
+
+const { description, image, title } = Astro.props.entry.data;
+---
+
+<style>
+	h1 {
+		margin-top: 1rem;
+		font-size: var(--sl-text-h1);
+		line-height: var(--sl-line-height-headings);
+		font-weight: 600;
+		color: var(--sl-color-white);
+	}
+
+    :root[data-theme="light"] h1, :root[data-theme="light"] p {
+        color: var(--sl-color-gray-6);
+    }
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: var(--o-pos);
+        z-index: -1;
+        mask-image: linear-gradient(to right,black, transparent 80%);
+        filter: brightness(0.5);
+    }
+    
+</style>
+
+
+<header>
+    {image?.path && <img style={`--o-pos: ${image?.position ?? "top left"}`} src={image.path} alt={description} /> }
+    {title && <h1>{title}</h1>}
+    {description && <p>{description}</p>}
+</header>

@@ -1,0 +1,47 @@
+---
+interface Props {
+    open: boolean
+    title: string
+}
+
+const { open, title } = Astro.props
+---
+
+<style>
+    :root {
+        --radius: 0.650rem
+    }
+    
+    details.collapse-wrapper {
+        margin-block: 1rem;
+        padding: 0;
+        border: none;
+    }
+
+    details.collapse-wrapper > summary.collapse-header {
+        background: var(--sl-color-gray-6);
+        padding: 0.5rem 1rem;
+        margin: 0;
+        border-start-start-radius: var(--radius);
+        border-start-end-radius: var(--radius);
+    }
+
+    details.collapse-wrapper:not([open]) > summary.collapse-header {
+        border-radius: var(--radius);
+    }
+
+    details.collapse-wrapper > section.collapse-body {
+        padding: 1rem;
+        margin: 0;
+        background-color: var(--sl-color-gray-5);
+        border-end-end-radius: var(--radius);
+        border-end-start-radius: var(--radius);
+    }
+</style>
+
+<details class="collapse-wrapper" open={open}>
+    <summary class="collapse-header">{title}</summary>
+    <section class="collapse-body">
+        <slot>
+    </section>
+</details>

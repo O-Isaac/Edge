@@ -1,0 +1,228 @@
+---
+import Tooltip from "./tooltip.astro";
+import PencilPlus from "@icons/pencil-plus.astro";
+import PencilMenus from "@icons/pencil-minus.astro";
+---
+
+<style>
+  td, th {
+    padding: 1rem !important;
+  }
+
+
+  table tbody tr:nth-child(even) {
+    background-color: var(--sl-color-gray-6);
+  }
+</style>
+
+<table>
+    <thead>
+      <tr>
+        <th>\#</th>
+        <th>Mod Name</th>
+        <th>Mandatory</th>
+        <th>Conflics</th>
+        <th>Requeriments</th>
+        <th>Download</th>
+      </tr>
+    </thead>
+  
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>SkyHUD</td>
+        <td>✔</td>
+        <td>
+          <Tooltip content="Overwrite by DEAR DIARY DM, UNTARNISHED UI and Edge UI">
+            <PencilMenus />
+          </Tooltip>
+        </td>
+        <td></td>
+        <td><a href="https://www.nexusmods.com/skyrimspecialedition/mods/12604">Nexus</a></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>SkyUI</td>
+        <td>✔</td>
+        <td>
+          <Tooltip content="Overwrite by DEAR DIARY DM, UNTARNISHED UI and Edge UI">
+            <PencilMenus />
+          </Tooltip>
+        </td>
+        <td></td>
+        <td><a href="https://www.nexusmods.com/skyrimspecialedition/mods/463">Nexus</a></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Widescreen Scale Removed</td>
+        <td>✔</td>
+        <td></td>
+        <td></td>
+        <td><a href="https://www.nexusmods.com/skyrimspecialedition/mods/136793">Nexus</a></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>MoreHUD</td>
+        <td></td>
+        <td>
+          <Tooltip content="Overwrite by DEAR DIARY DM, UNTARNISHED UI and Edge UI">
+            <PencilMenus />
+          </Tooltip>
+        </td>
+        <td></td>
+        <td><a href="https://www.nexusmods.com/skyrimspecialedition/mods/12688">Nexus</a></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>TrueHUD</td>
+        <td></td>
+        <td>
+          <Tooltip content="Overwrite by DEAR DIARY DM, UNTARNISHED UI and Edge UI">
+            <PencilMenus />
+          </Tooltip>
+        </td>
+        <td></td>
+        <td><a href="https://www.nexusmods.com/skyrimspecialedition/mods/62775">Nexus</a></td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>BTPS</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="https://www.nexusmods.com/skyrimspecialedition/mods/64339">Nexus</a></td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>SKYRIM SOULS RE</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="https://www.nexusmods.com/skyrimspecialedition/mods/27859">Nexus</a></td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>SHOW PLAYER IN MENUS</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="https://www.nexusmods.com/skyrimspecialedition/mods/81291">Nexus</a></td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>QUICKLOOT EE</td>
+        <td></td>
+        <td>
+          <Tooltip content="Overwrite by DEAR DIARY DM, UNTARNISHED UI and Edge UI">
+            <PencilMenus />
+          </Tooltip>
+        </td>
+        <td></td>
+        <td><a href="https://www.nexusmods.com/skyrimspecialedition/mods/69980">Nexus</a></td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td><span style="font-size: small;">COMPASS NAVIGATION OVERHAUL</span></td>
+        <td></td>
+        <td>
+          <Tooltip content="Overwrite by DEAR DIARY DM, UNTARNISHED UI and Edge UI">
+            <PencilMenus />
+          </Tooltip>
+        </td>
+        <td>Install Infinty UI</td>
+        <td><a href="https://www.nexusmods.com/skyrimspecialedition/mods/74484">Nexus</a></td>
+      </tr>
+      <tr>
+        <td colspan="6" style="text-align:center;">Up to this point the load order relative to each other doesn't matter</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>DEAR DIARY DM	</td>
+        <td></td>
+        <td>
+          <Tooltip content="Overwrite by UNTARNISHED UI and Edge UI">
+            <PencilMenus />
+          </Tooltip>
+          <Tooltip content="Overwrite SkyHUD, SkyUI, MoreHUD, TrueHUD, QUICKLOOT EE and COMPASS NAVIGATION OVERHAUL">
+            <PencilPlus />
+          </Tooltip>
+        </td>
+        <td></td>
+        <td><a href="https://www.nexusmods.com/skyrimspecialedition/mods/60837">Nexus</a></td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>UNTARNISHED UI</td>
+        <td></td>
+        <td>
+          <Tooltip content="Overwrite by Edge UI">
+            <PencilMenus />
+          </Tooltip>
+          <Tooltip content="Overwrite DEAR DIARY DM">
+            <PencilPlus />
+          </Tooltip>
+        </td>
+        <td></td>
+        <td><a href="https://www.nexusmods.com/skyrimspecialedition/mods/75188">Nexus</a></td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>DBVO</td>
+        <td></td>
+        <td>
+          <Tooltip content="Overwrite by Edge UI">
+            <PencilMenus />
+          </Tooltip>
+          <Tooltip content="Overwrite UNTARNISHED UI">
+            <PencilPlus />
+          </Tooltip>
+        </td>
+        <td>Install a patch</td>
+        <td><a href="https://www.nexusmods.com/skyrimspecialedition/mods/84329">Nexus</a></td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>Oxygen Meter 2</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="https://www.nexusmods.com/skyrimspecialedition/mods/64532">Nexus</a></td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>Experience patch</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="/">Discord</a></td>
+      </tr>
+      <tr>
+        <td>16</td>
+        <td>EDGE UI</td>
+        <td>✔</td>
+        <td>
+          <Tooltip content="Overwrite by Any font Replacer">
+            <PencilMenus />
+          </Tooltip>
+          <Tooltip content="Overwrite DEAR DIARY DM">
+            <PencilPlus />
+          </Tooltip>
+        </td>
+        <td></td>
+        <td><a href="https://www.nexusmods.com/skyrimspecialedition/mods/130983">Nexus</a></td>
+      </tr>
+      <tr>
+        <td>17</td>
+        <td>any font replacer</td>
+        <td></td>
+        <td>
+          <Tooltip content="Overwrite Edge UI">
+            <PencilPlus />
+          </Tooltip>
+        </td>
+        <td><span>Oblivion icons patch</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
