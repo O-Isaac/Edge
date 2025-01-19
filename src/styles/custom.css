@@ -1,3 +1,7 @@
+:root {
+  --sl-content-width: 50rem;
+}
+
 :root[data-theme="light"],
 [data-theme="light"] ::backdrop {
   --sl-color-text-accent: black;
@@ -6,6 +10,10 @@
 :root[data-theme="dark"],
 [data-theme="dark"] ::backdrop {
   --sl-color-text-accent: white;
+}
+
+.content-panel {
+  position: relative;
 }
 
 /* Site title  */
