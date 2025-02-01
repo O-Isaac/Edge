@@ -17,6 +17,11 @@ const { description, image, title } = Astro.props.entry.data;
         color: var(--sl-color-gray-6);
     }
 
+    :root[data-theme="light"] h1, :root[data-theme="light"] p {
+        color: var(--sl-color-gray-6);
+        filter: drop-shadow(0 0 1px black);
+    }
+
     img {
         position: absolute;
         top: 0;
