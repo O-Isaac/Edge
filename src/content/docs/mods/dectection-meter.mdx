@@ -16,6 +16,7 @@ head:
 ---
 
 import { Card, LinkCard, Steps } from '@astrojs/starlight/components';
+import { DISCORD_LINK } from 'astro.config.mjs';
 import Collapse from "@components/collapse.astro"
 
 ## Installation
@@ -32,7 +33,7 @@ import Collapse from "@components/collapse.astro"
 
   2. Download reskin
 
-      <LinkCard description="Your can download this mod in our discord server!" title='Download!'  href={"https://discord.gg/pQ2bmN42"} />
+      <LinkCard description="Your can download this mod in our discord server!" title='Download!'  href={DISCORD_LINK} />
 
   3. Overwrite Detection Meter with my reskin
 </Steps>

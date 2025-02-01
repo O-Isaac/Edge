@@ -3,6 +3,8 @@ import starlight from "@astrojs/starlight";
 import metatags from "./meta.config.mjs";
 import starlightSidebarTopicsDropdown from 'starlight-sidebar-topics-dropdown'
 
+export const DISCORD_LINK = "https://discord.gg/h2xnrKEsUp"
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://edge-ui-docs.vercel.app",
@@ -17,7 +19,7 @@ export default defineConfig({
         src: "./src/assets/logo.webp",
       },
       social: {
-        discord: "https://discord.gg/h2xnrKEsUp",
+        discord: DISCORD_LINK,
         patreon: "https://www.patreon.com/EdgeUI",
       },
       favicon: "/favicon.png",
